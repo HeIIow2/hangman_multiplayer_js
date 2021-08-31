@@ -1,0 +1,112 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: inherit;
+    margin: 0%;
+    background-color: #666;
+}
+.horizontal-flex-container {
+    display: flex;
+    justify-content: space-around;
+
+    height: inherit;
+    width: inherit;
+}
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+#hangman-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #444444;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+
+
+}
+
+#player {
+    background-color: #444444;
+    height: inherit;
+    padding: 0%;
+}
+
+#main-word {
+    flex-grow: 2;
+    text-align: center;
+
+
+    color: #000;
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    height: inherit;
+
+    background-color: #444444;
+}
+
+button {
+    margin: 2%;
+    padding: 1.5% 2%;
+
+    border: none;
+    font-family: "Comic Sans MS";
+    font-size: 150%;
+
+    background-color: #555;
+    box-shadow: 4px 9px #353535;
+}
+
+button:hover {background-color: #666666}
+button:active {
+    background-color: #666666;
+    box-shadow: 4px 5px #353535;
+    transform: translateY(4px);
+}
+
+#players-container {
+    background-color: #444;
+    margin-left: 2%;
+    padding: 2%;
+
+    width: 60%;
+
+    height: auto;
+}
+
+table {
+    width: 100%;
+    height: inherit;
+}
+
+table, th, td {
+    background-color:#555;
+
+    border-width: 20px;
+    padding: 2%;
+    font-family: "Comic Sans MS";
+}
+table, th{
+    background-color: #444;
+}
