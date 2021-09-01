@@ -10,49 +10,54 @@
 <div class="horizontal-flex-container">
     <div class="vertical-flex-container">
         <div id="hangman-container">
-            <img src="hangman.png", width="50%">
-            <span id="main-word">_ _ _</span>
+            <img src="hangman.png" width= "50%">
+            <span id="main-word"></span>
         </div>
         <div id="buttons-container">
-            <button>A</button>
-            <button>B</button>
-            <button>C</button>
-            <button>D</button>
-            <button>E</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>I</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
-            <button>M</button>
-            <button>N</button>
-            <button>O</button>
-            <button>P</button>
-            <button>Q</button>
-            <button>R</button>
-            <button>S</button>
-            <button>T</button>
-            <button>U</button>
-            <button>V</button>
-            <button>W</button>
-            <button>X</button>
-            <button>Y</button>
-            <button>Z</button>
+            <button onclick="onButtonPress('A')">A</button>
+            <button onclick="onButtonPress('B')">B</button>
+            <button onclick="onButtonPress('C')">C</button>
+            <button onclick="onButtonPress('D')">D</button>
+            <button onclick="onButtonPress('E')">E</button>
+            <button onclick="onButtonPress('F')">F</button>
+            <button onclick="onButtonPress('G')">G</button>
+            <button onclick="onButtonPress('H')">H</button>
+            <button onclick="onButtonPress('I')">I</button>
+            <button onclick="onButtonPress('J')">J</button>
+            <button onclick="onButtonPress('K')">K</button>
+            <button onclick="onButtonPress('L')">L</button>
+            <button onclick="onButtonPress('M')">M</button>
+            <button onclick="onButtonPress('N')">N</button>
+            <button onclick="onButtonPress('O')">O</button>
+            <button onclick="onButtonPress('P')">P</button>
+            <button onclick="onButtonPress('Q')">Q</button>
+            <button onclick="onButtonPress('R')">R</button>
+            <button onclick="onButtonPress('S')">S</button>
+            <button onclick="onButtonPress('T')">T</button>
+            <button onclick="onButtonPress('U')">U</button>
+            <button onclick="onButtonPress('V')">V</button>
+            <button onclick="onButtonPress('W')">W</button>
+            <button onclick="onButtonPress('X')">X</button>
+            <button onclick="onButtonPress('Y')">Y</button>
+            <button onclick="onButtonPress('Z')">Z</button>
         </div>
     </div>
     <div id="players-container">
         <div id="player">
 
-        <table>
+        <table id="player-table">
             <tr><th> Player </th><th> Points </th><th> Role </th></tr>
-            <tr><td>Spieler1</td><td>345678</td><td>keine Ahnung</td></tr>
-            <tr><td>Spieler2</td><td>1</td><td>nix</td></tr>
-            <tr><td>Spieler3</td><td>0</td><td></td></tr>
-            <tr><td>Spieler4</td><td>0</td><td></td></tr>
         </table>
+
+            <span id="waiting-for-player">
+                waiting for player: 1/4
+            </span>
     </div>
     </div>
 </div>
+<!-- Socket -->
+<script src="/socket.io/socket.io.js"></script>
+<!-- JavaScript -->
+<script src="js/client.js"></script>
+</body>
 

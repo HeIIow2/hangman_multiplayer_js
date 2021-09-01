@@ -1,6 +1,4 @@
-html {
-    height: 100%;
-}
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 body {
     height: inherit;
@@ -85,6 +83,25 @@ button:active {
     transform: translateY(4px);
 }
 
+form, label, input{
+    font-family: "Comic Sans MS";
+    font-size: 130%;
+
+    margin: 2%;
+    padding: 1.5% 2%;
+}
+
+
+input {
+    border: none;
+
+    background-color: #555;
+    box-shadow: 4px 9px #353535;
+}
+
+input:hover {background-color: #666666}
+
+
 #players-container {
     background-color: #444;
     margin-left: 2%;
@@ -100,13 +117,38 @@ table {
     height: inherit;
 }
 
-table, th, td {
+tr.self td {
+    background: #353535;
+
+
+    border-width: 20px;
+    padding: 2%;
+    font-family: "Comic Sans MS";
+}
+
+tr td {
     background-color:#555;
 
     border-width: 20px;
     padding: 2%;
     font-family: "Comic Sans MS";
 }
-table, th{
+th{
+    padding: 2%;
     background-color: #444;
+    border-width: 20px;
+    font-family: "Comic Sans MS";
+}
+
+
+#waiting-for-player {
+    font-family: "Comic Sans MS";
+    position: absolute;
+    padding: 2%;
+    bottom: 0;
+    right: 0;
+}
+
+#input-container {
+    text-align: center;
 }
